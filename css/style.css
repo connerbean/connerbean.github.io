@@ -233,6 +233,7 @@
         margin: 0 auto;
     }
 
+
 /* END OF EDUCATION */
 
 
@@ -318,3 +319,15 @@
         font-family: 'Courier';
     }
 /* END OF FOOTER */
+
+
+@media(max-width:768px) {
+    .education img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .header h1 {
+        font-size: 26pt;
+    }
+}
