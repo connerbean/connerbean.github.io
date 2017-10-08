@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script type="text/javascript" src="js/script.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/style.css">
@@ -53,7 +55,13 @@
             <li>I believe a well thought out plan is the best way to tackle a problem.</li>
             <li>I enjoy optimization, while appreciating creativity and unique solutions.</li>
             <li>I love integrating mathematical models and solutions into software whenever possible.</li>
+            <li><br/><br />
+                <div >
+                    <i id="quote"></i> 
+                </div>
+            </li>
         </ul>
+
     </div>
 
     <!-- END OF HEADER -->
@@ -74,8 +82,25 @@
                     <li><h3><span style="color:green">Michigan State University</span>: B.S. Computer Science <span style="color:grey">(In Progress)</span></h3></li>
                     <li>Expected Graduation Date: <span style="font-weight:bold">December 2018</span></li>
                     <li>Minor in Mathematics</li>
+                    <li><input id="smallLink" type="button" name="answer" value="More Information" onclick="showDiv('moreInfo')" /></li>
+                    <br />
                 </div>
-                <br /><br /><img src="images/msu-logo.png" alt="">
+                <div id="moreInfo" style="display:none">
+                    <br />
+                    <li><b><u>Overall GPA:</u> 3.34/4.00</b></li>
+                    <li><b><u>Computer Science GPA:</u> 3.83/4.00</b></li>
+                    <li><b><u>Relevant Coursework:</u></b></li>
+                        <ul id="Coursework">
+                            <li>-Operating Systems (Current)</li>
+                            <li>-Software Design (Current)</li>
+                            <li>-Data Structures & Algorithms</li>
+                            <li>-Number Theory I & II (Spring '18)</li>
+                            <li>-Linear Algebra</li>
+                            <li>-C++/Python Programming</li>                                
+                        </ul>
+                    <br /><br />
+                </div>
+                <br /><img src="images/msu-logo.png" alt="">
             </div>
         </div>
     </div>
