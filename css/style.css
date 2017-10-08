@@ -237,6 +237,7 @@
         margin: 0 auto;
     }
 
+<<<<<<< HEAD
     .education #smallLink{
         font-size: small;
         padding-left: 4px;
@@ -263,6 +264,8 @@
     .education #moreInfo #Coursework li{
         padding-left: 80px;        
     }
+=======
+>>>>>>> 36cfb957eb1d75acf4aa887a0c811834dee759e6
 
 /* END OF EDUCATION */
 
@@ -349,3 +352,15 @@
         font-family: 'Courier';
     }
 /* END OF FOOTER */
+
+
+@media(max-width:768px) {
+    .education img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .header h1 {
+        font-size: 26pt;
+    }
+}
