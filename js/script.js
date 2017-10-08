@@ -1,4 +1,4 @@
-function showDiv(id) {
+/*function showDiv(id) {
     var e = document.getElementById(id);
     if(e.style.display == 'block')
        e.style.display = 'none';
@@ -24,4 +24,4 @@ function randomQuote() {
 window.onload = function() {
     var q = randomQuote();
     document.getElementById("quote").innerHTML = '"' + q.quote + '"' + " - " + q.name;
-}
+}*/
