@@ -360,4 +360,18 @@
     .header h1 {
         font-size: 26pt;
     }
+
+    .education #moreInfo{
+        width: 100%;
+    }
+
+    .education #moreInfo li{
+        text-align: left;
+        font-size: small;
+        padding-left: 10px;
+    }
+
+    .education #moreInfo #Coursework li{
+        padding-left: 40px;        
+    }
 }
