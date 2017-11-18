@@ -65,10 +65,10 @@
     }
 
     .navbar-brand img{
-        position: relative;
-        height: 200%;
-        width: 15%;
-        top: -15px;
+        position: absolute;
+        height: 70%;
+        width: auto;
+        top: 7px;
     }
 
     .navbar-header a{
