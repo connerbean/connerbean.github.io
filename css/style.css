@@ -64,10 +64,12 @@
         border: 0px;
     }
 
-    .navbar-brand{
-        color: black !important;
-        font-size: 30px;
-        padding-left: 30px;
+    .navbar-brand img{
+        position: relative;
+        height: 200%;
+        top: -10px;
+        bottom: 0px;
+
     }
 
     .navbar-header a{
