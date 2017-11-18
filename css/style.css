@@ -65,9 +65,10 @@
     }
 
     .navbar-brand img{
-        position: relative;
-        height: 200%;
-        top: -10px;
+        position: absolute;
+        height: 80%;
+        width: 5%;
+        top: 5px;
         bottom: 0px;
 
     }
