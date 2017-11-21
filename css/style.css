@@ -68,7 +68,7 @@
 
     #perLogo{
         position: absolute;
-        height: 70%;
+        height: 40px;
         width: auto;
         top: 3px;
         padding-top: 3px;
@@ -115,6 +115,7 @@
         text-align: center;
         position: relative;
         overflow: hidden;
+        padding-bottom: 50px;
     }
 
     .header::before {
