@@ -29,29 +29,30 @@
 
 
     <!-- NAVIGATION   -->
-<div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-            <a href="#" class="navbar-brand"><img src="images/CSB(dark gray).png" alt="C.S.B." item-height="0%"/></a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">home</a></li>
-                <li><a href="images/resume.pdf">resume</a></li>
-                <li><a href="#educationHeader">education</a></li>
-                <li><a href="#interests">interests</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>  
+            </div>
+
+            <a href="index.html"> <img id="perLogo" src="images/CSB(dark gray).png" alt="C.S.B."/></a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">home</a></li>
+                    <li><a href="images/resume.pdf">resume</a></li>
+                    <li><a href="#educationHeader">education</a></li>
+                    <li><a href="#interests">interests</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- END OF NAVIGATION -->
 
@@ -77,49 +78,66 @@
 
     <!-- END OF HEADER -->
 
-    <!-- START OF EDUCATION -->
 
-    <div id="educationHeader" class="educationHeader">
-        <div class="container-fluid">
-            <i id="faH" class="fa fa-graduation-cap" aria-hidden="true"></i>                            
-            <h2>Education</h2>
-        </div>
-    </div>
+    <!-- START OF GRADIENT -->
 
-    <div id="education" class="education">
-        <div class="container-fluid">
-            <div class="col-lg-12">
-                <div id="par" class="ul">
-                    <li><h3><span style="color:green">Michigan State University</span>: B.S. Computer Science <span style="color:grey">(In Progress)</span></h3></li>
-                    <li>Expected Graduation Date: <span style="font-weight:bold">December 2018</span></li>
-                    <li>Minor in Mathematics</li>
-                    <li><input id="smallLink" type="button" name="answer" value="More Information" onclick="showDiv('moreInfo')" /></li>
-                    <br />
+    <!-- Scroll Down -->
+        <div id="grad2">
+                <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
+                <div id="scrolldown">  
+                    <div class="container-fluid">
+                        <i id="scd" class="fa fa-angle-double-down" aria-hidden="true"></i>                           
+                    </div>
                 </div>
-                <div id="moreInfo" style="display:none">
-                    <br />
-                    <li><b><u>Overall GPA:</u> 3.34/4.00</b></li>
-                    <li><b><u>Computer Science GPA:</u> 3.83/4.00</b></li>
-                    <li><b><u>Relevant Coursework:</u></b></li>
-                        <ul id="Coursework">
-                            <li>-Operating Systems (Current)</li>
-                            <li>-Software Design (Current)</li>
-                            <li>-Data Structures & Algorithms</li>
-                            <li>-Number Theory I & II (Spring '18)</li>
-                            <li>-Linear Algebra</li>
-                            <li>-C++/Python Programming</li>                                
-                        </ul>
-                    <br /><br />
+                <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>             -->
+            
+    <!-- End of scroll down -->
+        
+        
+            <!-- START OF EDUCATION -->
+        
+            <div id="educationHeader" class="educationHeader">
+                <div class="container-fluid">
+                    <i id="faH" class="fa fa-graduation-cap" aria-hidden="true"></i>                            
+                    <h2>Education</h2>
                 </div>
-                <br /><img src="images/msu-logo.png" alt="">
             </div>
-        </div>
+        
+            <div id="education" class="education">
+                <div class="container-fluid">
+                    <div class="col-lg-12">
+                        <div id="par" class="ul">
+                            <li><h3><span style="color:green">Michigan State University</span>: B.S. Computer Science <span style="color:grey">(In Progress)</span></h3></li>
+                            <li>Expected Graduation Date: <span style="font-weight:bold">December 2018</span></li>
+                            <li>Minor in Mathematics</li>
+                            <li><input id="smallLink" type="button" name="answer" value="More Information" onclick="showDiv('moreInfo')" /></li>
+                            <br />
+                        </div>
+                        <div id="moreInfo" style="display:none">
+                            <br />
+                            <li><b><u>Overall GPA:</u> 3.34/4.00</b></li>
+                            <li><b><u>Computer Science GPA:</u> 3.83/4.00</b></li>
+                            <li><b><u>Relevant Coursework:</u></b></li>
+                                <ul id="Coursework">
+                                    <li>-Operating Systems (Current)</li>
+                                    <li>-Software Design (Current)</li>
+                                    <li>-Data Structures & Algorithms</li>
+                                    <li>-Number Theory I & II (Spring '18)</li>
+                                    <li>-Linear Algebra</li>
+                                    <li>-C++/Python Programming</li>                                
+                                </ul>
+                            <br /><br />
+                        </div>
+                        <br /><img src="images/msu-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+            <!-- END OF EDUCATION -->
+
     </div>
-    <br /><br /><br /><br />
+    <!-- END OF GRADIENT -->
     
-    <!-- END OF EDUCATION -->
-
-
 
     <!-- START OF SKILLS -->
 
@@ -232,7 +250,7 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -240,9 +258,32 @@
 
     <script>
     $(document).ready(function () {
-    $(".navbar-nav li a").click(function(event) {
-        $(".navbar-collapse").collapse('hide');
-    });
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        $(".navbar a").on('click', function(e) {
+               // prevent default anchor click behavior
+            e.preventDefault();
+
+            // store hash
+            var hash = this.hash;
+            var tope = 0;
+            if ($(hash).length)
+            {
+                tope = $(hash).offset().top;
+            }
+
+            // animate
+            $('html, body').animate({
+                scrollTop: tope
+                }, 400, function(){
+
+                // when done, add hash to url
+                // (default click behaviour)
+                window.location.hash = hash;
+                });
+        });
     });
     </script>
   </body>
