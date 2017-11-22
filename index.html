@@ -43,12 +43,12 @@
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">home</a></li>
+                    <li><a id="sec" href="#">home</a></li>
                     <li><a href="images/resume.pdf">resume</a></li>
-                    <li><a href="#educationHeader">education</a></li>
-                    <li><a href="#interests">interests</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a id="sec" href="#educationHeader">education</a></li>
+                    <li><a id="sec" href="#interests">interests</a></li>
+                    <li><a id="sec" href="#about">about</a></li>
+                    <li><a id="sec" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -246,7 +246,7 @@
             <br /><br />
         </div>
     <!-- END OF FOOTER -->
-
+ 
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -262,7 +262,7 @@
             $(".navbar-collapse").collapse('hide');
         });
 
-        $(".navbar a").on('click', function(e) {
+        $(".navbar #sec").on('click', function(e) {
                // prevent default anchor click behavior
             e.preventDefault();
 
