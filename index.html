@@ -21,15 +21,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
-
-
 </head>
+
+
+
   <body id="index">
     <title>Conner Bean</title>
 
 
     <!-- NAVIGATION   -->
-    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="myNavbar" class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,12 +44,36 @@
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id="sec" href="#">home</a></li>
-                    <li><a href="images/resume.pdf">resume</a></li>
-                    <li><a id="sec" href="#educationHeader">education</a></li>
-                    <li><a id="sec" href="#interests">interests</a></li>
-                    <li><a id="sec" href="#about">about</a></li>
-                    <li><a id="sec" href="#contact">contact</a></li>
+                    <li>
+                        <a id="sec2" href="index.html#">
+                            <i id="headImg" class="fa fa-home" aria-hidden="true"></i><br/><span id="headTxt">home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="images/resume.pdf">
+                            <i id="headImg" class="fa fa-file-text" aria-hidden="true"></i><br/><span id="headTxt">resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="education.html">
+                            <i id="headImg" class="fa fa-graduation-cap" aria-hidden="true"></i><br/><span id="headTxt">education</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="projects.html">
+                            <i id="headImg" class="fa fa-code-fork" aria-hidden="true"></i><br/><span id="headTxt">projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="work.html">
+                            <i id="headImg" class="fa fa-briefcase" aria-hidden="true"></i><br/><span id="headTxt">work</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec2" href="#contact">
+                            <i id="headImg" class="fa fa-address-card-o" aria-hidden="true"></i><br/><span id="headTxt">contact</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,82 +86,23 @@
     <!-- HEADER -->
 
     <div id="header" class="header">
-        <h1>Conner S. Bean</h1>
-        <p><br /><br /><br /><br /><br />Hi, I'm Conner. I am a Senior at Michigan State University studying Computer Science.<br /><br /></p>
-        <ul>
-            <li>I believe a well thought out plan is the best way to tackle a problem.</li>
-            <li>I enjoy optimization, while appreciating creativity and unique solutions.</li>
-            <li>I love integrating mathematical models and solutions into software whenever possible.</li>
-            <li><br/><br />
-                <div >
-                    <i id="quote"></i> 
-                </div>
-            </li>
-        </ul>
-
+        <h1>Hi, I'm</h1>
+        <h1 id="typewriter"><span id="initials">C</span>onner <span id="initials">S</span>. <span id="initials">B</span>ean</h1>
+        <div class="Iam">          
+            <p id="this">And I</p>
+            <b>
+                <p class="innerIam">
+                    enjoy creatively optimizing processes<br /><br /><br /><br />
+                    believe a good plan is necessary<br /><br /><br /><br />
+                    love mathematical models and analysis<br /><br /><br /><br />
+                </p>
+            </b>
+        </div>
     </div>
 
     <!-- END OF HEADER -->
 
 
-    <!-- START OF GRADIENT -->
-
-    <!-- Scroll Down -->
-        <div id="grad2">
-                <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
-                <div id="scrolldown">  
-                    <div class="container-fluid">
-                        <i id="scd" class="fa fa-angle-double-down" aria-hidden="true"></i>                           
-                    </div>
-                </div>
-                <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>             -->
-            
-    <!-- End of scroll down -->
-        
-        
-            <!-- START OF EDUCATION -->
-        
-            <div id="educationHeader" class="educationHeader">
-                <div class="container-fluid">
-                    <i id="faH" class="fa fa-graduation-cap" aria-hidden="true"></i>                            
-                    <h2>Education</h2>
-                </div>
-            </div>
-        
-            <div id="education" class="education">
-                <div class="container-fluid">
-                    <div class="col-lg-12">
-                        <div id="par" class="ul">
-                            <li><h3><span style="color:green">Michigan State University</span>: B.S. Computer Science <span style="color:grey">(In Progress)</span></h3></li>
-                            <li>Expected Graduation Date: <span style="font-weight:bold">December 2018</span></li>
-                            <li>Minor in Mathematics</li>
-                            <li><input id="smallLink" type="button" name="answer" value="More Information" onclick="showDiv('moreInfo')" /></li>
-                            <br />
-                        </div>
-                        <div id="moreInfo" style="display:none">
-                            <br />
-                            <li><b><u>Overall GPA:</u> 3.34/4.00</b></li>
-                            <li><b><u>Computer Science GPA:</u> 3.83/4.00</b></li>
-                            <li><b><u>Relevant Coursework:</u></b></li>
-                                <ul id="Coursework">
-                                    <li>-Operating Systems (Current)</li>
-                                    <li>-Software Design (Current)</li>
-                                    <li>-Data Structures & Algorithms</li>
-                                    <li>-Number Theory I & II (Spring '18)</li>
-                                    <li>-Linear Algebra</li>
-                                    <li>-C++/Python Programming</li>                                
-                                </ul>
-                            <br /><br />
-                        </div>
-                        <br /><img src="images/msu-logo.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <br /><br /><br /><br />
-            <!-- END OF EDUCATION -->
-
-    </div>
-    <!-- END OF GRADIENT -->
     
 
     <!-- START OF SKILLS -->
@@ -167,7 +133,6 @@
                 </div>
             </div>
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br />
     </div>
     <!-- END OF SKILLS -->
 
@@ -238,13 +203,12 @@
 
     <!-- START OF FOOTER -->
     <div class="footer">
-            <div class="container-fluid">
-                <br /><br /><h2><img src="images/CSB(tan).png" alt="" height="10%" width="10%"/></h2>
-                <p>Created by me.</p>
-                <p>Copyright Conner Bean 2017</p>
-            </div>
-            <br /><br />
+        <div class="container-fluid">
+            <h2><img src="images/CSB(tan).png" alt="" height="10%" width="10%"/></h2>
+            <p>Created by me.</p>
+            <p>Copyright Conner Bean 2017</p>
         </div>
+    </div>
     <!-- END OF FOOTER -->
  
     
@@ -262,7 +226,7 @@
             $(".navbar-collapse").collapse('hide');
         });
 
-        $(".navbar #sec").on('click', function(e) {
+        $(".navbar #sec2").on('click', function(e) {
                // prevent default anchor click behavior
             e.preventDefault();
 
@@ -286,6 +250,8 @@
         });
     });
     </script>
+
+<script>$("div.navbar-fixed-top").autoHidingNavbar();</script>
   </body>
 
 </html>

@@ -25,3 +25,4 @@ window.onload = function() {
     var q = randomQuote();
     document.getElementById("quote").innerHTML = '"' + q.quote + '"' + " - " + q.name;
 }
+
