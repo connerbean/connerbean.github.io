@@ -260,7 +260,6 @@
       }
       .Iam p {
         height: 50px;
-        float: left;
         margin-right: 0.5em;
       }
       .Iam b {
@@ -645,11 +644,7 @@
       }
 
       .Iam .innerIam{
-        font-size: 9pt;
-      }
-
-      .Iam b{
-          padding-left: 0px;
+        font-size: 10pt;
       }
 
       .navbar
