@@ -473,9 +473,8 @@
      #projImg{
         text-align: left;
         padding-top: 40px;
-        padding-right: 60px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 70%;
+        max-height: 70%;
     }
 
     #page-header{
@@ -674,8 +673,6 @@
     #eduImg{
         display: block;
         text-align: center;
-        /* padding-top: 20px;
-        padding-right: 10px; */
         max-width: 80%;
         max-height: 80%;
     }
@@ -685,7 +682,7 @@
         text-align: center;
         padding-left: 5%;
         margin: auto;
-        max-width: 112%;
-        max-height: 112%;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
