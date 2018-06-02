@@ -21,8 +21,5 @@ function randomQuote() {
     return q;
 }
 
-window.onload = function() {
-    var q = randomQuote();
-    document.getElementById("quote").innerHTML = '"' + q.quote + '"' + " - " + q.name;
-}
 
+console.log("Someone is curious, looking under the hood...")
