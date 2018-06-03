@@ -26,7 +26,7 @@
 
 
 
-<body>
+<body id="body" style="background-color: #f2f2f2">
     <title>About Me</title>
 
     <!-- NAVIGATION   -->
@@ -76,11 +76,11 @@
     <!-- END OF NAVIGATION -->
 
     <!-- Body of about me -->
-    <div style="background: #F2F2F2; height: 90vh; padding-top: 1vh;"> 
+    <div style="background: #F2F2F2; height: 90vh; padding-top: 1vh; padding-bottom: 20vh;"> 
         <h1 style="margin-bottom: 3vh;">My name is Conner, and I'm a:</h1>
         <h4 style="font-size: x-large; color: dodgerblue">Designer, Developer, Creator</h4>
-        <p id="aboutMeParagraph">
-            I like being outdoors and writing code (sometimes at the same time) 
+        <p id="aboutMeParagraph" style="padding-bottom: 6vh;">
+            I like being outdoors and writing code (frequently at the same time) 
             <br>
                 <img src="images/nature.jpg" alt="Nature" id="circlePicture" style="margin  : 3vh; width: 150pt; height: 150pt;">
                 <img src="images/code_logic.jpg" alt="Code" id="circlePicture" style="margin-top: 3vh; margin-bottom: 3vh; width: 150pt; height: 150pt;">
@@ -90,7 +90,7 @@
             <br>
             <br>
             I am a student at Michigan State University majoring in Computer Science & Engineering and I will be graduating in December of 2018. 
-            <a onclick="openNav()">Want to see some of the relevant courses I have taken?</a> I have experience developing for large scale corporations and 
+            <a class="opener" onclick="openNav()">Want to see some of the relevant courses I have taken?</a> I have experience developing for large scale corporations and 
             working in diverse team environments through my experiences interning at Union Pacific Railroad and Amazon.inc - check out my 
             <a href="work.html">work</a> to learn more! I love the adventure that is life, and I am obsessed with the entire creation process.
              I love collaboration, helping those who need it, and meeting new people. Feel free to <a onclick="openConnect()">connect with me!</a>
@@ -178,6 +178,22 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
+        function clickAway() {
+            var doNotContinue = '.opener, .mySidenav'
+            if (!event.target.matches(doNotContinue)) {
+                var mySidenav = document.getElementById("mySidenav");
+                if (mySidenav.style.width !== "0px") {
+                    closeNav();
+                }
+            }
+        }
+
+
+        var body = document.getElementById('body');
+        // Initialize width to 0
+        document.getElementById("mySidenav").style.width = "0";
+        body.addEventListener("click", clickAway);
     </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
