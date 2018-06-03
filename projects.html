@@ -26,172 +26,126 @@
 
 
 
-  <body id="projects">
-    <title>Projects</title>
+<body>
+    <title>About Me</title>
 
     <!-- NAVIGATION   -->
-    <div id="myNavbar" class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>  
-                </div>
-    
-                <a href="index.html"> <img id="perLogo" src="images/CSB(dark gray).png" alt="C.S.B."/></a>
-    
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a id="sec2" href="index.html#">
-                                <i id="headImg" class="fa fa-home" aria-hidden="true"></i><br/><span id="headTxt">home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="sec" href="images/resume.pdf">
-                                <i id="headImg" class="fa fa-file-text" aria-hidden="true"></i><br/><span id="headTxt">resume</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="sec" href="education.html">
-                                <i id="headImg" class="fa fa-graduation-cap" aria-hidden="true"></i><br/><span id="headTxt">education</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="sec" href="projects.html">
-                                <i id="headImg" class="fa fa-code-fork" aria-hidden="true"></i><br/><span id="headTxt">projects</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="sec" href="work.html">
-                                <i id="headImg" class="fa fa-briefcase" aria-hidden="true"></i><br/><span id="headTxt">work</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="sec2" href="index.html#contact">
-                                <i id="headImg" class="fa fa-address-card-o" aria-hidden="true"></i><br/><span id="headTxt">contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- END OF NAVIGATION -->
-
-
-
-
-    <div class="projMain">            
-        <div class="container-fluid" id="page-header">
-            <h1>Projects</h1>
-        </div>
-
-        <div class="container-fluid" id="tan-sect">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 id="proj-head-dark">MinVasion</h2>
-                    <ul id="desk-dark" style="padding-left: 10%; display: block; text-align: left;">
-                            <li><b>A 2D Game that has users click-and-drag to avoid character-seeking minions</li></b> <br/><br/>
-                            <li>This game was created in September 2017. Written in C++, the game starts with a character, Gru, which users
-                                have to move around obstacles to avoid minions chasing him. Each obstacle he leads minions into are worth 
-                                individual points. Players attempt to stay alive for as long as possible while also getting the highest score.
-                            </li>
-                    </ul>
-                    
-                    <p id="tech">Technologies / Skills: C++, XML, Design</p>
-                    <p><a href="https://github.com/connerbean/MinVasion">Source</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <img id="projImg" src="images/minvasion.png" alt="">  
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid" id="dark-sect">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 id="proj-head-light">Super Mar-IO</h2>
-                    <ul id="desc-light" style="padding-left: 10%; display: block; text-align: left;">
-                            <li><b>A neural network designed with the intention of beating Super Mario on Continuous Play</li></b><br/><br/>
-                            <li>This project was worked on at SpartaHack 2017 with <a href="http://webdev.cse.msu.edu/~lambe168/AlexWebsite/ ">Alex Lambert</a>. I developed
-                            the fitness function in C# and Lua, which was responsible for determining how close the current generation was to victory. The program runs on BizHawk
-                            Emulator, and runs through continuous iterations of Mario's with the goal of defeating the game with the setting 'Continuous Play' on. </li>
-                    </ul>
-                    
-                    <p id="tech-light">Technologies / Skills: C#, Lua, Statistics, Analysis</p>
-                    <p><a href="https://github.com/wert23239/Meta-MarIO">Source</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <img id="projImg" src="images/ContinuousPlay.gif" alt="">  
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid" id="tan-sect">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 id="proj-head-dark">Personal Website</h2>
-                    <ul id="desk-dark" style="padding-left: 10%; display: block; text-align: left;">
-                            <li><b>Personal Website created as a portfolio and contact hub.</li></b> <br/><br/>
-                            <li>The website was originally created in August 2017. It is updated roughly 1-2 times a week, including aesthetic improvements as well as
-                                addition of new information. This site has been a work in progress, and served as my first web development experience. 
-                            </li>
-                    </ul>
-                    
-                    <p id="tech">Technologies / Skills: HTML, CSS, Javascript, Bootstrap, JQuery</p>
-                    <p><a href="https://github.com/connerbean/connerbean.github.io">Source</a></p>
-                </div>
-                <div class="col-lg-4">
-                    <img id="projImg" src="images/website.png" alt="">  
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid" id="dark-sect">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 id="proj-head-light">Other Notable Projects</h2>
-                    <ul id="desc-light" style="padding-left: 10%; display: block; text-align: left;">
-                            <li><b>RemindMe!</li></b><br/>
-                            <li style="padding-left: 5px;">A python program with the intent of keeping myself organized. Allows me to add reminders to a database, which get emailed to myself
-                                every morning at 8am pertaining to that specific day. 
-                            </li><br/>
-                            <a style="display: block; text-align: center;" href="https://github.com/connerbean/remindme">Source</a> <br/><br/>
-                            <li><b>Consist File Generator</li></b><br/>
-                            <li style="padding-left: 5px;">A script created in C# that allows users to parse through customer-supplied data, look up data in the RailInc UMLER database, and 
-                                created simulation train files. Has automated 100+ hours of work to date. 
-                            </li><br/><br/>
-                            <li><b>Report Generator</li></b><br/>
-                            <li style="padding-left: 5px;">An MFC application created using XAML and C# that utilizes Jira REST API to create reports pertaining to workflow and efficiency.
-                                Use of application saves over $14,000 annually. 
-                            </li><br/>
-                    </ul>
-                    <p id="tech-light">Technologies / Skills: C#, Python, XAML, .NET</p>
-                </div>
-                <div class="col-lg-4">
-                        <i id="projIcon" class="fa fa-smile-o" aria-hidden="true"></i>  
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- START OF FOOTER -->
-    <div class="footer">
+    <div id="myNavbar" class="navbar" role="navigation">
         <div class="container-fluid">
-            <h2><img src="images/CSB(tan).png" alt="" height="10%" width="10%"/></h2>
-            <p>Created by me.</p>
-            <p>Copyright Conner Bean 2017</p>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>  
+            </div>
+
+            <a href="index.html"> <img id="personalLogo" src="images/CSB(dark gray).png" alt="C.S.B."/></a>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a id="sec2" href="index.html">
+                            <i id="headImg" class="fa fa-home" aria-hidden="true"></i><br/><span id="headTxt">home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="about.html">
+                            <i id="headImg" class="fa fa-graduation-cap" aria-hidden="true"></i><br/><span id="headTxt">about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="projects.html">
+                            <i id="headImg" class="fa fa-code-fork" aria-hidden="true"></i><br/><span id="headTxt">projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="work.html">
+                            <i id="headImg" class="fa fa-briefcase" aria-hidden="true"></i><br/><span id="headTxt">work</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="sec" href="images/resume.pdf">
+                            <i id="headImg" class="fa fa-file-text" aria-hidden="true"></i><br/><span id="headTxt">resume</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!-- END OF FOOTER -->
+    <!-- END OF NAVIGATION -->
 
+    
+    <!-- Start of Projects -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/sqlite.png" alt="Card image cap"/>
+                    <div class="card-bottom">
+                        <h3>Sqlite(me)</h3>
+                        Created a database management system entirely in Python with functionality and syntax based off SQLite3. Utilizes transaction relations, JSON file storing, and exception handling to protect ACID principles
+                        <br><b>Source:</b> <i>Coming Soon!</i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/minvasion.png" alt="Card image cap">
+                    <div class="card-bottom">
+                        <h3>MinVasion</h3>
+                        Created a click-and-drag graphical game written and unit tested in Visual C++ that spawns randomized generations of creatures drawn to the user’s cursor. The goal of the game? Keep away for as long as possible
+                        <br><b>Source:</b> <a href="https://github.com/connerbean/MinVasion">MinVasion</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/ContinuousPlay.gif" alt="Card image cap">
+                    <div class="card-bottom">
+                        <h3>Super Mar-I/O</h3>
+                        Developed a script written in primarily Lua and C# that utilizes neural nets and genetic algorithms to learn through continuous generations how to beat Super Mario with the setting Continuous Play on
+                        <br><b>Source:</b> <a href="https://github.com/wert23239/Meta-MarIO">Meta-MarIO</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/pstsim.jpg" alt="Card image cap">
+                    <div class="card-bottom">
+                        <h3>Train Generator</h3>
+                        Developed a script in C# to parse through customer supplied specifications to generate train lists for simulation, automating 25+ hours of work to date
+                        <br><b>Source:</b> <i>Private</i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/jira.png" alt="Card image cap">
+                    <div class="card-bottom">
+                        <h3>Jira Report Generator</h3>
+                        Created an MFC application using XAML and C# that utilizes Jira REST API to gather employee data pertaining to task workflow and efficiency. Use of application saves over $14,000 annually
+                        <b>Source:</b> <i>Private</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Projects -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </body>
+</body>
 
 </html>
