@@ -353,6 +353,9 @@
         z-index: 999 !important;
         position: relative;
     }
+    .closebtn {
+        font-size: 6vh !important;
+    }
 }
 
 

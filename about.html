@@ -93,7 +93,7 @@
             <a class="opener" onclick="openNav()">Want to see some of the relevant courses I have taken?</a> I have experience developing for large scale corporations and 
             working in diverse team environments through my experiences interning at Union Pacific Railroad and Amazon.com - check out my 
             <a href="work.html">work</a> to learn more! I love the adventure that is life, and I am obsessed with the entire creation process.
-             I love collaboration, helping those who need it, and meeting new people. Feel free to <a onclick="openConnect()">connect with me!</a>
+             I love collaboration, helping those who need it, and meeting new people. Feel free to <a class="opener" onclick="openConnect()">connect with me!</a>
         </p>
     </div>
     <!-- End of Body of about me -->
@@ -188,11 +188,15 @@
         }
 
         function clickAway() {
-            var doNotContinue = '.opener, .mySidenav'
+            var doNotContinue = '.opener, .mySidenav, .connectMe'
             if (!event.target.matches(doNotContinue)) {
                 var mySidenav = document.getElementById("mySidenav");
                 if (mySidenav.style.width !== "0px") {
                     closeNav();
+                }
+                var connectMe = document.getElementById("connectMe");
+                if (connectMe.style.width !== "0px") {
+                    closeConnect();
                 }
             }
         }
@@ -201,6 +205,7 @@
         var body = document.getElementById('body');
         // Initialize width to 0
         document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("connectMe").style.widows = "0";
         body.addEventListener("click", clickAway);
     </script>
 
