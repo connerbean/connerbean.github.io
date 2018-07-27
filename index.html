@@ -51,6 +51,22 @@
         </div>
     </div>
 
+    <div class="hidden">
+        <script type="text/javascript">
+            var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "./images/nature.jpg",
+                "./images/code_logic.jpg"
+            )
+        </script>
+    </div>
+
      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -91,22 +107,6 @@
                 window.location.hash = hash;
                 });
         });
-    });
-    </script>
-
-    <script>
-    var dir = "images/";
-    var fileextension = ".png";
-    $.ajax({
-        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-        url: dir,
-        success: function (data) {
-            //List all .png file names in the page
-            $(data).find("a:contains(" + fileextension + ")").each(function () {
-                var filename = this.href.replace(window.location.host, "").replace("http://", "");
-                $("body").append("<img src='" + dir + filename + "'>");
-            });
-        }
     });
     </script>
   </body>
