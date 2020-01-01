@@ -23,92 +23,101 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon.ico" />
-</head>
+  </head>
 
 
 
   <body id="index">
     <title>Conner Bean | Developer, Designer, Creator </title>
     
-    <div>
-        <div class="col-md-8" style="margin: 0 !important; padding: 0 !important;">
-            <img id="indexImage" src="images/ph1.jpg" alt="Image is missing. Conner you fool!">
+    <div id="index-img">
+        <img id="indexImage" src="images/ph1.jpg" alt="Photo" style="width:100%;height:100%;">
+        <div class="text-block">
+            <h1>Hi, I'm <span style="color: dodgerblue">Conner</span>.<h1>
+            <img src="images/me.jpg" alt="Avatar" id="circlePicture" style="width: 20%; height: 25%;">
+            <h4 style="font-size: x-large; color: gray">Designer, Developer, Creator</h4>
+            <p>
+                <br>
+                I love optimizing processes, implementing high level abstractions, and creating applications
+                and tools that make life a little easier for anyone and everyone.
+                <br>
+                <br>
+                I have experience developing solutions for large scale corporations and 
+                working in diverse team environments through my experiences working at AWS in Seattle, WA and Union Pacific Railroad in Okemos, MI. 
+                I enjoy the enirety of the creation process, and have quite enjoyed my experiences in developing strong distributed systems. 
+                <br>
+                <br>
+                I love learning, collaboration, helping those who need it, and meeting new people. Feel free to <a class="opener" href="#" style="color: dodgerblue" onclick="openConnect()">connect with me!</a>
+                <br>
+                <br>
+                <br>
+                <a href="images/resume.pdf" style="color: dodgerblue"><u>Resume</u></a> ----
+                <a href="work.html" style="color: dodgerblue;"><u>Work</u></a> ----
+                <a href="projects.html" style="color: dodgerblue"><u>Projects</u></a>
+            </p>
         </div>
     </div>
 
-    <div class="verticalNavigaion">
-        <div class="col-md-4" style="background: #F2F2F2; height: 100vh;"> 
-            <img src="images/me.jpg" alt="Avatar" id="circlePicture" style="width: 45%; height: 25%; margin-top: 5vh;">
-            <h1 class="line-1 anim-typewriter">Hi, I'm <span style="color: dodgerblue">Conner</span>.<h1>
-            <ul style="padding-top: 4vh; margin: auto">
-                <li id="verticalNavigaionItem"><a href="about.html">about</a></li><br>
-                <li id="verticalNavigaionItem"><a href="work.html">work</a></li><br>
-                <li id="verticalNavigaionItem"><a href="projects.html">projects</a></li><br>
-                <li id="verticalNavigaionItem"><a href="images/resume.pdf">resume</a></li><br>
-                <!-- COMING SOON!!! -->
-                <!-- <li id="verticalNavigaionItem"><a href="blog.html">blog</a></li> -->
-            </ul>
-        </div>
+    <div id="connectMe" class="connectMe">
+        <a href="javascript:void(1)" class="closebtn" onclick="closeConnect()">&times;</a>
+        <h2 style="color: #818181">Twitter: <a href="http://twitter.com/connerbean">@connerbean</a></h2>
+        <h2 style="color: #818181">LinkedIn: <a href="http://linkedin.com/in/connerbean">connerbean</a></h2>
+        <h2 style="color: #818181">Github: <a href="http://github.com/connerbean">connerbean</a></h2>
+        <h2 style="color: #818181; padding-bottom: 25px;">Email: <a href="mailto:conner.bean@icloud.com">conner.bean@icloud.com</a></h2>
     </div>
+    
+    <script>
+        function openConnect() {
+            console.log("open");
+            if (screen.width >= 600){
+                document.getElementById("connectMe").style.width = "30%";
+            } else {
+                document.getElementById("connectMe").style.width = "75%";
+            }
+        }
 
-    <div class="hidden">
-        <script type="text/javascript">
-            var images = new Array()
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
+        function closeConnect() {
+            console.log("close");
+            document.getElementById("connectMe").style.width = "0";
+        }
+
+        function clickAway() {
+            console.log("click away");
+            var doNotContinue = '.opener, .connectMe';
+            if (!event.target.matches(doNotContinue)) {
+                var connectMe = document.getElementById("connectMe");
+                if (connectMe.style.width !== "0px") {
+                    closeConnect();
                 }
             }
-            preload(
-                "./images/nature.jpg",
-                "./images/code_logic.jpg"
-            )
-        </script>
-    </div>
+        }
+        function clickAwayTouch() {
+            var doNotContinue = '.opener, .connectMe';
+            if (!event.target.matches(doNotContinue)) {
+                var connectMe = document.getElementById("connectMe");
+                if (connectMe.style.width !== "0px") {
+                    closeConnect();
+                }
+            }
+        }
 
+
+        var body = document.getElementById('index');
+        // Initialize width to 0
+        document.getElementById("connectMe").style.widows = "0";
+        body.addEventListener("click", clickAway);
+        body.addEventListener("touchstart", clickAwayTouch);
+    </script>
      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <script>
         console.log("Photo credit: Haoshuang Lou - 'Snow Capped Mountains'")
     </script>
-
-    <script>
-    $(document).ready(function () {
-        $(".navbar-nav li a").click(function(event) {
-            $(".navbar-collapse").collapse('hide');
-        });
-
-        $(".navbar #sec2").on('click', function(e) {
-               // prevent default anchor click behavior
-            e.preventDefault();
-
-            // store hash
-            var hash = this.hash;
-            var tope = 0;
-            if ($(hash).length)
-            {
-                tope = $(hash).offset().top;
-            }
-
-            // animate
-            $('html, body').animate({
-                scrollTop: tope
-                }, 400, function(){
-
-                // when done, add hash to url
-                // (default click behaviour)
-                window.location.hash = hash;
-                });
-        });
-    });
-    </script>
   </body>
-
 </html>
