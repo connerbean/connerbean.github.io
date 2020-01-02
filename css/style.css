@@ -27,7 +27,7 @@
         padding-left: 20px;
         padding-right: 20px;
         opacity: 0.85;
-        overflow: scroll;
+        overflow: auto;
         padding-bottom: 3%;
     } 
     
