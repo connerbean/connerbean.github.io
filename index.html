@@ -25,45 +25,120 @@
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
 
-
+<!-- Please don't make fun of my rudimentary frontend Skills, I'm a backend engineer for a reason ;) -->
 
   <body id="index">
-    <title>Conner Bean | Developer, Engineer, Creator </title>
+    <title>Conner Bean | Software Engineer </title>
     
     <div id="index-img">
-        <img id="indexImage" src="images/ph1.jpg" alt="Photo" style="width:100%;height:100%;">
         <div class="text-block">
-            <h1>Hi, I'm <span style="color: dodgerblue">Conner</span>.<h1>
-            <img src="images/me.jpg" alt="Avatar" id="circlePicture" style="width: 20%; height: 25%;">
-            <h4 style="font-size: x-large; color: gray">Developer, Engineer, Creator</h4>
-            <p>
+            <h1 style="background-color: whitesmoke;">Hi, I'm <span style="background-color: whitesmoke; color: darkgreen">Conner</span>.<h1>
+            <h4 style="background-color: whitesmoke; font-size: x-large; color: gray">(Software Engineer, Tea Drinker, Sci-Fi Enthusiast)</h4>
+            <p style="background-color: whitesmoke;">
                 <br>
-                I love optimizing processes, implementing high level abstractions, and creating applications, services, 
-                and tools that make life a little easier.
+                I am an Engineer who is dedicated to creating resilient and scalable distributed systems that provide low latency solutions.
                 <br>
                 <br>
-                I have experience developing solutions on large scale, highly available services, as well as 
-                working in diverse team environments through my experiences with AWS API Gateway in Seattle, WA, and Union Pacific Railroad in Okemos, MI. 
-                I enjoy the entirety of the creation process, and have quite enjoyed spending my time developing resilient distributed systems.
+                I've spent years of my career working on large-scale distributed systems and growing them to handle millions of requests per second globally. The problems one can uncover through scaling and building systems of this nature are fascinating, and I rather enjoy implementing their solutions. From reading papers and/or designs regarding similar problems, to prototyping new solutions for newfound problems, I enjoy the entirety of the creative process and I look forward to the next problems I encounter in my career.
                 <br>
                 <br>
-                I love learning, collaboration, helping those who need it, and writing clean, scalable code. Feel free to <a class="opener" href="#" style="color: dodgerblue" onclick="openConnect()">connect with me!</a>
+                In my free time, I've lately been spending it learning the intricacies of chess, improving my cooking (looking at you, Italian food!), and going for walks with my Fiancée and our 3 year old English Springer Spaniel. I also enjoy video and tabletop gaming, as well as reading a good mystery novel. Scandinavian thrillers seem to be the best so far.
                 <br>
                 <br>
+                I love learning, collaboration, helping those who need it, and growing those around me. Feel free to <a class="opener" href="#" style="color: dodgerblue" onclick="openConnect()">connect with me.</a>
                 <br>
-                Resume Available Upon Request ----
-                <a href="work.html" style="color: dodgerblue;"><u>Work</u></a> ----
-                <a href="projects.html" style="color: dodgerblue"><u>Projects</u></a>
+                <br>
             </p>
         </div>
+        <!-- <div>
+            <h1 style="position: absolute; top: 90%; left: 40%; width: 20%;">Find Work Below</h1>
+        </div> -->
+    </div>
+    <div class="container">
+        <h1 style="padding-top: 2%;">Professional Experience</h1>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-cloud"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Amazon -- AWS</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Software Development Engineer II | AWS Serverless - API Gateway <br><b style="color: #f0ad4e">July 2020 - Current</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Software Development Engineer on the AWS API Gateway Team, helping customers to create, manage, and invoke millions of API's daily.</p> 
+                </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-cloud"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Amazon -- AWS</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Software Development Engineer I | AWS Serverless - API Gateway <br><b style="color: #f0ad4e">March 2019 - June 2020</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Software Development Engineer on the AWS API Gateway Team, helping customers to create, manage, and invoke millions of API's daily.</p> 
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-cloud"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Amazon -- AWS</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Software Development Engineer Intern | AWS Serverless - API Gateway <br><b style="color: #f0ad4e">Summer 2018</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Implemented new integrations to reduce customer time spent configuring API's and provide new features. </p>
+                </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge success"><i class="glyphicon glyphicon-education"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Michigan State Unviersity</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Teaching Assistant | College of Engineering<br><b style="color: #3f903f">January 2018 - December 2018</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Designed, developed, and reviewed programming projects for students enrolled in CSE 331: Data Structures & Algorithms.</p> 
+                    <p>Met with students on a weekly basis to help further understand course material and projects.</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge info"><i class="glyphicon glyphicon-wrench"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Union Pacific Railroad</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Junior Software Developer | PST Simulation Team <br><b style="color: dodgerblue">April 2017 - January 2018</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Developed a new GUI for simulation software using Unity and C# to decrease response time by up to 33%.</p> 
+                    <p>Created an information logger to record physics data from simulated recreations of real-world train derailments.</p>
+                </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge success"><i class="glyphicon glyphicon-education"></i></div>
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Michigan State University</h4>
+                    <p style="font-weight: bold;"><small class="text-muted">Computer Science & Mathematics Tutor<br><b style="color: #3f903f">January 2015 - May 2017</b></small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Taught mathematics material to fellow students and helped create efficient C++ and Python course projects for CSE 232/231 respectively.</p>
+                </div>
+                </div>
+            </li>
+        </ul>
     </div>
 
     <div id="connectMe" class="connectMe">
         <a href="javascript:void(1)" class="closebtn" onclick="closeConnect()">&times;</a>
         <h2 style="color: #818181">Twitter: <a href="http://twitter.com/connerbean">@connerbean</a></h2>
         <h2 style="color: #818181">LinkedIn: <a href="http://linkedin.com/in/connerbean">connerbean</a></h2>
-        <h2 style="color: #818181">Github: <a href="http://github.com/connerbean">connerbean</a></h2>
-        <h2 style="color: #818181; padding-bottom: 25px;">Email: <a href="mailto:conner.bean@icloud.com">conner.bean@icloud.com</a></h2>
+        <h2 style="color: #818181; padding-bottom: 25px;">Email: <a href="mailto:conner.bean@hey.com">conner.bean@hey.com</a></h2>
     </div>
     
     <script>
@@ -117,7 +192,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <script>
-        console.log("Photo credit: Haoshuang Lou - 'Snow Capped Mountains'")
+        console.log("Take care of yourself, take care of others.")
     </script>
   </body>
 </html>
